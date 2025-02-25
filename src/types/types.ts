@@ -1,5 +1,5 @@
 export interface Account {
-  label: { text: string }[];
+  label: '';
   type: 'LDAP' | 'Local';
   login: string;
   password?: string;
