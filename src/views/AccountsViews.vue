@@ -5,6 +5,10 @@
         <q-toolbar-title>
           Пользователи
         </q-toolbar-title>
+
+        <q-btn flat round dense icon="person" to="/accounts">
+          <q-tooltip> Аккаунты</q-tooltip>
+        </q-btn>
       </q-toolbar>
     </q-header>
 
@@ -13,16 +17,12 @@
     </q-page-container>
   </q-layout>
 </template>
-
 <script lang="ts">
-
-import { defineComponent } from 'vue';
-
-
-export default defineComponent({
-  name: 'MainLayout',
-  components: {
-  }
-});
-
+export default {
+  name: 'AccountsViews',
+};
 </script>
+
+<style>
+
+</style>
