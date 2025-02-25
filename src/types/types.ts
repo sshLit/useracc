@@ -1,8 +1,13 @@
+export interface Label {
+  text: string;
+}
+
 export interface Account {
-  label: '';
+  label: Label[];
   type: 'LDAP' | 'Local';
   login: string;
-  password?: string;
-  valid: boolean;
+  password: string | null;
+  validLogin: boolean;
+  validPassword: boolean;
   touched: boolean;
 }
