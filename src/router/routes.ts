@@ -9,11 +9,8 @@ const routes: RouteRecordRaw[] = [
         path: 'accounts',
         component: () => import('src/views/AccountsViews.vue'),
       }
-    ]
-  },
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue'),
+    ],
+    redirect: '/accounts'
   },
 ];
 
